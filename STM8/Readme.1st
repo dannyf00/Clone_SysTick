@@ -1,3 +1,6 @@
 This is the SysTick implementation on STM8 chips. Timer used is TIM4, running at 128:1 prescaler by default.
 
 The same set of higher-level routines are provided to maintain portability. 
+
+Code does not use ST's Standard Peripheral Library, other than the header file, stm8s.h, provided here for your convenience.
+Alternatively, you can download the SPL from ST.com.
