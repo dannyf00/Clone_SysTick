@@ -6,3 +6,4 @@ Code snippets and examples are provided for the following chip:
 2. AVR
 3. PIC10/12/16/18F
 4. STM8
+5. PIC32MX1xx/2xx
