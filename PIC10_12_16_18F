@@ -1,9 +1,0 @@
-Here is an implementation of SysTick via TIMER0 on PIC10/12/16/18F chips.
-
-TIMER0 is configured to run as an 8-bit counter with a 256:1 prescaler.
-
-High level routines remain the same. 
-
-A demo main.c is provided.
-
-Workbench is a PIC12F675, XC8 v1.11.
