@@ -1,0 +1,7 @@
+This is an implementation of a SysTick clone on AVR (in this case, an ATmega328p) using TIMER0.
+
+The TIMER0 is configured as a free running upcounter, with a 256x prescaler.
+
+Otherwise, higher level user routines are identical, to the PIC24F version.
+
+Arduino like functions are also provided for convenience, like millis() / micros(). Delays are done via systick_delayms() and systick_delayus().
