@@ -1,0 +1,3 @@
+This is the SysTick implementation on STM8 chips. Timer used is TIM4, running at 128:1 prescaler by default.
+
+The same set of higher-level routines are provided to maintain portability. 
