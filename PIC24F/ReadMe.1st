@@ -1,4 +1,4 @@
-This folder shows how to recreate a SysTick-like on PIC24/dsPIC MCUs.
+This folder shows how to recreate a SysTick-like on PIC24/dsPIC MCUs. Testbench is a PIC24FJ64GA002, XC16.
 
 TIMER1 on those devices is repurposed to create an always-on time base.
 
