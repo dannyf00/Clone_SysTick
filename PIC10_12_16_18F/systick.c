@@ -6,10 +6,8 @@ volatile uint32_t systickovf_counter=0;	//systick overflow counter
 
 //tmr0 isr
 void tmr0_isr(void) {
-	if (T0IF) {
-		T0IF = 0;							//clear the flag
-		systickovf_counter+=0x100ul;		//increment the counter - 8-bit counter
-	}	
+	T0IF = 0;							//clear the flag
+	systickovf_counter+=0x100ul;		//increment the counter - 8-bit counter
 }
 	
 //initialize the timer1 (16bit)
