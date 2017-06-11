@@ -1,4 +1,4 @@
-This is a SysTick clone for PIC32MX1xx/2xx families of 32-bit MCUs.
+This is a SysTick clone for PIC32MX1xx/2xx families of 32-bit MCUs: testbench is a PIC32MX250F128B.
 
 It utilizes TIMER1, with a prescaler of 1:1.
 
