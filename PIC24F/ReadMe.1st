@@ -1,0 +1,10 @@
+This folder shows how to recreate a SysTick-like on PIC24/dsPIC MCUs.
+
+TIMER1 on those devices is repurposed to create an always-on time base.
+
+Sample user code is shown. It has a few parts:
+
+1. User has to initialize the SysTick timing base, with a call to systick_init(). it sets up TIMER1 to overflow after 0x10000ul ticks, and enables timer interrupt.
+2. global interrupt is turned on, if it is not otherwise on.
+3. a few timing functions are created, like ticks(), systick_delayms() and systick_delayus(), in addition to the Arduino millis() and micros(). Those functionalities assume the correct specification of F_CPU.
+
