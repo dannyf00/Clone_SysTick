@@ -2,3 +2,4 @@ Here is the same set of files for Cortex-M0/1/2/3/4/4F chips where SysTick is na
 
 The routines are provided to show how the same set of functions / calls could be implemented and used across a wide spectrum of chips.
 
+The routines were initialized coded on STM32F100, then MSP432P, LM4F120 and now on LPC1227. It should work with other Cortex-Mx chips, unmodified or with minor modification.
