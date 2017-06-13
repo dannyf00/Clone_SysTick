@@ -11,18 +11,12 @@ Code snippets and examples are provided for the following chip:
 
 General usage:
 
-systick_init():     initialize the systick module. 24-bit downcounter.
-
-ei():               enable global interrupts
-
-ticks():            return systick ticks, 32-bit bit
-
-millis():           time stamp, in milli seconds
-
-micros():           time stamp, in micro seconds
-
-systick_delayms():  delay in milli seconds
-
-systick_delayus():  delay in micro seconds
+1. systick_init():     initialize the systick module. 24-bit downcounter.
+2. ei():               enable global interrupts
+3. ticks():            return systick ticks, 32-bit bit
+4. millis():           time stamp, in milli seconds
+5. micros():           time stamp, in micro seconds
+6. systick_delayms():  delay in milli seconds
+7. systick_delayus():  delay in micro seconds
 
 User needs to specify the clock input to the "SysTick" module, in F_CPU (which is remapped to SystemCoreClock on CMSIS compliant systems).
