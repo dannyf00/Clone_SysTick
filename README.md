@@ -37,22 +37,18 @@ Another typical use is for precision timing, either blocking or non-blocking:
 
 Blocking:
   
-  {systick_delayms(10);    //delay 10ms, blocking
-  
+```  
+  systick_delayms(10);    //delay 10ms, blocking
   my_task();              //execute my_task after 10ms
   
 Non-blocking:
-  
-{  time0 = millis();       //time stamp time0
-  
+
+```
+  time0 = millis();       //time stamp time0
   time1 = millis();       //time stamp time1
-  
   if (time1 - time0 >= 10) {    //if 10ms has gone by
-  
     time0 += 10;          //advance time0 - to eliminate jitter
-    
     my_task();            //execute user task
-  
   }
   
     
