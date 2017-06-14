@@ -32,7 +32,7 @@ A typical of those functions is for timing / benchmarking, as shownbelow
     time1=ticks() - time0;  //time1 measures time elapsed / taken by my_task()
     ...
   } 
-
+```
 Another typical use is for precision timing, either blocking or non-blocking:
 
 Blocking:
@@ -40,7 +40,7 @@ Blocking:
 ```  
   systick_delayms(10);    //delay 10ms, blocking
   my_task();              //execute my_task after 10ms
-  
+```  
 Non-blocking:
 
 ```
@@ -50,5 +50,5 @@ Non-blocking:
     time0 += 10;          //advance time0 - to eliminate jitter
     my_task();            //execute user task
   }
-  
+```
     
