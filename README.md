@@ -30,7 +30,7 @@ A typical of those functions is for timing / benchmarking, as shownbelow
     my_task();        //run user task to be timed
     time1=ticks() - time0;  //time1 measures time elapsed / taken by my_task()
     ...
-  }
+  } 
   
 Another typical use is for precision timing, either blocking or non-blocking:
 
