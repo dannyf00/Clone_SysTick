@@ -45,6 +45,7 @@ Non-blocking:
 
 ```
   time0 = millis();       //time stamp time0
+  ...
   time1 = millis();       //time stamp time1
   if (time1 - time0 >= 10) {    //if 10ms has gone by
     time0 += 10;          //advance time0 - to eliminate jitter
