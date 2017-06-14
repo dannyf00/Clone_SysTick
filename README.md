@@ -23,6 +23,7 @@ User needs to specify the clock input to the "SysTick" module, in F_CPU (which i
 
 A typical of those functions is for timing / benchmarking, as shownbelow
   
+  {
   systick_init();     //initialize the systick timer
   
   ei();               //enable global interrupt
@@ -42,13 +43,13 @@ Another typical use is for precision timing, either blocking or non-blocking:
 
 Blocking:
   
-  systick_delayms(10);    //delay 10ms, blocking
+  {systick_delayms(10);    //delay 10ms, blocking
   
   my_task();              //execute my_task after 10ms
   
 Non-blocking:
   
-  time0 = millis();       //time stamp time0
+{  time0 = millis();       //time stamp time0
   
   time1 = millis();       //time stamp time1
   
