@@ -1,0 +1,3 @@
+Using TMR0->MR0 compare match channel as a virtual 32-bit SysTick timer.
+
+All systick APIs are implemented.
